@@ -27,7 +27,7 @@ developer communities.
 1. 해당 Repository clone
 2. 프로젝트 설치 후 강화학습을 위한 유니티 환경 Build(PPT 참고)
 3. Build한 유니티 환경에 대한 Model 학습 진행
-```
+```{python}
 # PPO(Proximal Policy Optimization)
 mlagents-learn {trainer_path} --env={env_path}/{build_name} --run-id={run_id}
 ```
