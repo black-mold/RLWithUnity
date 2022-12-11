@@ -31,7 +31,7 @@ developer communities.
 # PPO(Proximal Policy Optimization)
 mlagents-learn {trainer_path} --env={env_path}/{build_name} --run-id={run_id}
 ```
-
+-- PPO algorithm Hyperparameter에 관한 사항은 ./config/ppo/3DBall.yaml 
 
 ### References
 1. folk [ml-agents @ release_17](https://github.com/Unity-Technologies/ml-agents/releases/tag/release_17)
