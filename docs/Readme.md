@@ -22,6 +22,16 @@ provides a central platform where advances in AI can be evaluated on Unity’s
 rich environments and then made accessible to the wider research and game
 developer communities.
 
+### 실행
+
+1. 해당 Repository clone
+2. 프로젝트 설치 후 강화학습을 위한 유니티 환경 Build(PPT 참고)
+3. Build한 유니티 환경에 대한 Model 학습 진행
+```
+# PPO(Proximal Policy Optimization)
+mlagents-learn {trainer_path} --env={env_path}/{build_name} --run-id={run_id}
+```
+
 
 ### References
 1. folk [ml-agents @ release_17](https://github.com/Unity-Technologies/ml-agents/releases/tag/release_17)
