@@ -22,6 +22,10 @@ provides a central platform where advances in AI can be evaluated on Unity’s
 rich environments and then made accessible to the wider research and game
 developer communities.
 
+### 프로젝트 Description
+저의 프로젝트는 Unity에서 제공한 ml-agent 라이브러리의 PPO 알고리즘을, Python-API에서 구현한 DQN 알고리즘으로 성능(mean reward)을 재현
+
+
 ### 1. ml-agent실행
 
 1. 해당 Repository clone
