@@ -43,8 +43,8 @@ mlagents-learn {trainer_path} --env={env_path}/{build_name} --run-id={run_id}
 python RL_Trainer_dqn.py
 
 # DQN 학습 결과 Test
-python RL_Tester_dqn.py
-# 단 RL_Tester_dqn에서 model_load 경로를 수정해주어야 함.
+python RL_Tester_dqn.py  # 단 RL_Tester_dqn에서 model_load 경로를 수정해주어야 함.
+
 ```
 
 
