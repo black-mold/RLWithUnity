@@ -22,7 +22,7 @@ provides a central platform where advances in AI can be evaluated on Unity’s
 rich environments and then made accessible to the wider research and game
 developer communities.
 
-### 실행
+### 1. ml-agent실행
 
 1. 해당 Repository clone
 2. 프로젝트 설치 후 강화학습을 위한 유니티 환경 Build(PPT 참고)
@@ -32,6 +32,16 @@ developer communities.
 mlagents-learn {trainer_path} --env={env_path}/{build_name} --run-id={run_id}
 ```
 -- PPO algorithm Hyperparameter에 관한 사항은 ./config/ppo/3DBall.yaml 
+
+### 2. Python-API DQN 실행
+```
+# DQN 학습
+python RL_Trainer_dqn.py
+
+# DQN 학습 결과 Test
+python RL_Tester_dqn.py
+```
+
 
 ### References
 1. folk [ml-agents @ release_17](https://github.com/Unity-Technologies/ml-agents/releases/tag/release_17)
