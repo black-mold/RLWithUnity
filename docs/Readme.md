@@ -51,7 +51,7 @@ pip3 install torch torchvision torchaudio --extra-index-url https://download.pyt
 mlagents-learn {trainer_path} --env={env_path}/{build_name} --run-id={run_id}
 ```
 ```{python}
-mlagents-learn config/ppo/3DBall.yaml --env=../ball_3d/ball_3d/ball_3d.exe --run-id=original_3d_ball
+mlagents-learn config/ppo/3DBall.yaml --env=./project_unity_hub/ball3d/ball3d_env/ball3d.exe --run-id=rl_project
 ```
 
 -- PPO algorithm Hyperparameter에 관한 사항은 ./config/ppo/3DBall.yaml 
