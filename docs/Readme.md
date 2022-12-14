@@ -25,8 +25,23 @@ developer communities.
 ### 프로젝트 Description
 Unity에서 제공한 ml-agent 라이브러리의 PPO 알고리즘을, Python-API에서 구현한 DQN 알고리즘으로 성능(mean reward)을 재현
 
+### 0. 환경 설정
+1. 패키지 다운로드
+```{python}
+conda install -y python==3.8
+pip install mlagents==0.26.0
 
+conda install cuda -c nvidia
+pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu116
+```
 
+2. Unity에서 Build한 환경 다운로드
+- 동작 OS : Window
+- 다운로드 주소 : https://drive.google.com/file/d/1kEUlAdeUz5sU4W6UWxVpUMv2bGJEmgNt/view?usp=sharing
+- 다운로드한 파일을 해당 repository( {경로}/RLWithUnity/)에 압축해제
+- 실행
+  -  학습 전 : ./RLWithUnity/project_unity_hub/ball3d/ball3d_env/ball3d.exe 실행
+  -  PPO 학습 후 : ./RLWithUnity/project_unity_hub/ball3d_ppo_training_result/ppo/ppo_env/ppo.exe 실행
 
 ### 1. ml-agent실행
 
@@ -42,6 +57,8 @@ mlagents-learn config/ppo/3DBall.yaml --env=../ball_3d/ball_3d/ball_3d.exe --run
 ```
 
 -- PPO algorithm Hyperparameter에 관한 사항은 ./config/ppo/3DBall.yaml 
+
+#### build한 환경 확인
 
 ### 2. Python-API DQN 실행
 ```
