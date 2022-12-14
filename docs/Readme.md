@@ -37,9 +37,9 @@ pip3 install torch torchvision torchaudio --extra-index-url https://download.pyt
 
 2. Unity에서 Build한 환경 다운로드
 - 동작 OS : Window
-- 다운로드 주소 : https://drive.google.com/file/d/1kEUlAdeUz5sU4W6UWxVpUMv2bGJEmgNt/view?usp=sharing
-- 다운로드한 파일을 해당 repository( {경로}/RLWithUnity/)에 압축해제
-- 실행
+- **다운로드 주소 : https://drive.google.com/file/d/1kEUlAdeUz5sU4W6UWxVpUMv2bGJEmgNt/view?usp=sharing**
+- 다운로드한 파일을 해당 repository(**{경로}/RLWithUnity/**)에 압축해제
+- **실행**
   -  학습 전 : ./RLWithUnity/project_unity_hub/ball3d/ball3d_env/ball3d.exe 실행
   -  PPO 학습 후 : ./RLWithUnity/project_unity_hub/ball3d_ppo_training_result/ppo/ppo_env/ppo.exe 실행
 
