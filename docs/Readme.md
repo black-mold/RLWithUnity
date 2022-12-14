@@ -23,7 +23,9 @@ rich environments and then made accessible to the wider research and game
 developer communities.
 
 ### 프로젝트 Description
-저의 프로젝트는 Unity에서 제공한 ml-agent 라이브러리의 PPO 알고리즘을, Python-API에서 구현한 DQN 알고리즘으로 성능(mean reward)을 재현
+Unity에서 제공한 ml-agent 라이브러리의 PPO 알고리즘을, Python-API에서 구현한 DQN 알고리즘으로 성능(mean reward)을 재현
+
+
 
 
 ### 1. ml-agent실행
@@ -35,6 +37,10 @@ developer communities.
 # PPO(Proximal Policy Optimization)
 mlagents-learn {trainer_path} --env={env_path}/{build_name} --run-id={run_id}
 ```
+```{python}
+mlagents-learn config/ppo/3DBall.yaml --env=../ball_3d/ball_3d/ball_3d.exe --run-id=original_3d_ball
+```
+
 -- PPO algorithm Hyperparameter에 관한 사항은 ./config/ppo/3DBall.yaml 
 
 ### 2. Python-API DQN 실행
